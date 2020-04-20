@@ -1,0 +1,4 @@
+-¿Por qué usar Git?
+R= Se usa para guardar repositorios del proyecto en la web, de esta forma prevenir daños en el 
+código.
+

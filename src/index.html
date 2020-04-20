@@ -1,0 +1,51 @@
+<!-- WEBPACK:
+q- Webpack se necesita para poder enpaquetar todos los modulos que se necesiten durante el 
+desarrollo, el se encarga de hacerlo por nosotros y guarda la configuración, así cuando
+iniciemos el proyecto en otro lugar solo bajamos la configuración y la ejecutamos,
+ya con eso tendriamos todo configurado como estaba anteriormente.     
+
+2- para correr la configuración de webpack y que cree la carpeta disc, se debe
+configurar para que se pueda ejecutar el comando npm run build.
+
+3- npm install (se puede reducir como i)
+--save-dev (se puede reducir como -D) que significa que se instala como dependencia de 
+desarrollo.
+
+4- Con npm start, se abre un servidor de webpack que va actualizando los cambios
+en el código ejecutando el mismo el npm run build.
+
+5- Para usar los css que se necesiten se deben importar en el archivo js del mismo 
+componente, ademas se deben instalar 2 paquetes de npm llamadas "style-loader" y
+"css-loader", añadiendo una configuración en el archivo de webpack-config.js 
+para que todo funciones correctamente.
+
+6- Para usar un archivo css Global se debe crear el archivo la mismo nivel indel index.js
+e instalar unos paquetes "mini-css-extract-plugin"
+
+7- Para minimizar el archivo global de css se usa "optimize-css-assets-webpack-plugin"
+
+8- Para manejar imagenes se usan los paquetes "file-loader" y "copy-webpack-plugin". 
+
+9- Para instalar el manejador de versiones Babel se usa el comando "npm install --save-dev babel-loader @babel/core" url "https://babeljs.io/setup#installation"
+
+10- Para instalar la minificación del código en babel "npm install babel-preset-minify --save-dev" url "https://babeljs.io/docs/en/babel-preset-minify"
+
+11- Más configuraciones para minimizar el código JS en webpack con babel "npm install terser-webpack-plugin --save-dev url "https://github.com/webpack-contrib/terser-webpack-plugin"
+
+12- Paraa pasar el código JS actual a una versión vieja que sirva en todos los navegadores "npm install --save-dev @babel/preset-env" url "https://babeljs.io/docs/en/babel-preset-env"
+
+13- Para eliminar la carpeta dist con un código se instala "npm install --save-dev clean-webpack-plugin" url "https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder"
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack</title>
+</head>
+<body>
+    <img src="./assets/webpack.png" alt="Logo Webpack">
+    <!-- Carperta que crea Webpack, donde se encapsula todo el código jS de la aplicación -->
+    <!-- <script src="../dist/main.js"></script> -->
+</body>
+</html>
