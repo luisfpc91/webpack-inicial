@@ -1,4 +1,20 @@
--¿Por qué usar Git?
-R= Se usa para guardar repositorios del proyecto en la web, de esta forma prevenir daños en el 
+- ¿Por qué usar Git?
+Se usa para guardar repositorios del proyecto en la web, de esta forma prevenir daños en el 
 código.
+
+- Para installar git se debe descargar desde la página oficial url "https://git-scm.com/"
+
+- Comandos iniciales git:
+  1- git config --global user.name "nombre_usuario"
+  2- git config --global user.email "correo_usuario"
+  3- git config --global color.ui auto -> habilíta colores de ayuda en la linea de comandos 
+  4- git init -> inicia git en la carpeta del proyecto
+  5- git clone -> copia un repositorio ya existente
+  6- git add . -> hace una backup del sistema actual en memoria listo para versionar
+  7- git commit -m "mensaje" -> le crea un mensaje al backup. 
+  8- git checkout -- . -> Cambia el sistema local por el backup hecho anteriormente.
+  9- git remote add origin https://github.com/luisfpc91/webpack-inicial.git -> le dice a git donde se deben guardar los repositorios
+  10- git push -u origin master -> Hace push de nuestro código al repositorio en git, la -u le dice a git que nuestra rama por defecto sera a la que le estamos haciendo este push.
+
+
 
